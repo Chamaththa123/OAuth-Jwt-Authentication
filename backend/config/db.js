@@ -9,4 +9,15 @@ const pool = mysql.createPool({
   database: process.env.DB_NAME
 });
 
+
+(async () => {
+  try {
+    const connection = await pool.getConnection();
+    console.log('MySQL Database Connected');
+    connection.release();
+  } catch (error) {
+    console.error('MySQL Connection Failed:', error.message);
+  }
+})();
+
 export default pool;
