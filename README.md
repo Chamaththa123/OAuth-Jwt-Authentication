@@ -22,5 +22,5 @@ Users can log in with their Google account, and the system stores user details a
 - **Frontend**: React.js, @react-oauth/google, Axios, React Router
 - **Backend**: Node.js, Express.js, MySQL, JWT, Google OAuth2
 - **Database**: MySQL
-- **Environment Variables**: `.env` for sensitive credentials
+- **Environment Variables**: .env for sensitive credentials
 
